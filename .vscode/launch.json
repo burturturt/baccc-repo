@@ -1,0 +1,43 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Server",
+      "program": "${workspaceFolder}/bin/www",
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Server (nodemon)",
+      "runtimeExecutable": "nodemon",
+      "program": "${workspaceFolder}/bin/www",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Config Env",
+      "program": "${workspaceFolder}/utils/configEnv.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Request Discord OAUth token",
+      "program": "${workspaceFolder}/utils/getDiscordOAuthToken.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Send Test Mail",
+      "program": "${workspaceFolder}/utils/sendTestMail.js"
+    }
+  ]
+}
